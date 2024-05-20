@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".VideoCallMain"
+    android:background="@drawable/gardient_white_to_black">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:elevation="10dp"
+        android:gravity="center_vertical"
+        app:cardBackgroundColor="#DCF0FA"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:background="@drawable/gardient_white_to_black"
+            android:paddingVertical="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Start a Video/\nAudio Call"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Start a Video/Audio Call around the globe in few seconds and enjoy the seamless connection"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/textView"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="7dp"
+                    android:src="@drawable/video1"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                <TableRow android:layout_width="40dp"
+                    android:layout_height="2.5dp"
+                    android:background="@color/black"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/microphone"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="50dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:elevation="10dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            app:cardBackgroundColor="#DCF0FA"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="1dp">
+
+            <EditText
+                android:id="@+id/user_id_text_field"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="7dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/outlined_box_background"
+                android:textColor="@color/black"
+                android:textColorHint="#504F4F"
+                android:textSize="16sp"
+                android:hint="ID"
+                tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button_next"
+        android:layout_marginTop="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="35dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Next Button"
+                android:src="@drawable/round_arrow"
+                tools:ignore="HardcodedText,RedundantDescriptionCheck" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

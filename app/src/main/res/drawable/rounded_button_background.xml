@@ -1,0 +1,5 @@
+<!-- res/drawable/rounded_button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#EEEAEA" />
+    <corners android:radius="40dp" /> <!-- Adjust the radius to control the corner roundness -->
+</shape>

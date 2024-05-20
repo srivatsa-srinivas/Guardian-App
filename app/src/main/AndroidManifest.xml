@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nikhil.guardian">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SEND_SMS"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.CALL_PHONE"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.nikhil.guardian.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName="com.nikhil.guardian.MainActivity"></activity>
+        <activity
+            android:name="com.nikhil.guardian.NearPolice"
+            android:label="Near police Station"
+            android:parentActivityName="com.nikhil.guardian.MainActivity"></activity>
+        <activity
+            android:name="com.nikhil.guardian.NearHospital"
+            android:label="Nearest hospital"
+            android:parentActivityName="com.nikhil.guardian.MainActivity"></activity>
+        <activity
+            android:name="com.nikhil.guardian.SosActivity"
+            android:label="SOS activity"
+            android:parentActivityName="com.nikhil.guardian.MainActivity"></activity>
+        <activity
+            android:name="com.nikhil.guardian.FullScreenYoutubeViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:exported="true"
+            android:label="Youtube activity"
+            android:parentActivityName="com.nikhil.guardian.MainActivity">
+        </activity>
+        <activity
+            android:name=".VideoCallActivity"
+            android:exported="false"
+            android:theme="@style/Theme.VideoCallAppAndroid"/>
+        <activity
+            android:name=".VideoCallMain"
+            android:exported="true"
+            android:theme="@style/Theme.VideoCallAppAndroid"/>
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:label="Safe Place Activity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name="com.nikhil.guardian.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

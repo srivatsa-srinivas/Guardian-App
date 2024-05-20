@@ -1,0 +1,37 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#BF6973</item>
+        <item name="colorPrimaryDark">#BF4351</item>
+        <item name="colorAccent">#CD5656</item>
+
+        <!-- Define a style for buttons with the rounded background -->
+        <item name="buttonStyle">@style/RoundedButtonStyle</item>
+    </style>
+
+    <!-- Define the style for buttons with the rounded background -->
+    <style name="RoundedButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button_background</item>
+        <!-- Add more attributes as needed -->
+    </style>
+    <style name="LoginTheme" parent="FirebaseUI">
+        <item name="android:windowBackground">@drawable/img</item>
+        <item name="android:textColor">#B64949</item>
+        <item name="android:textSize">18sp</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlNormal">#392929</item>
+        <item name="colorControlActivated">#392929</item>
+        <item name="colorControlHighlight">#090909</item>
+        <item name="android:textColorPrimary">#392929</item>
+        <item name="android:textColorSecondary">#392929</item>
+    </style>
+    <style name="Base.Theme.VideoCallAppAndroid" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.VideoCallAppAndroid" parent="Base.Theme.VideoCallAppAndroid" />
+
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "113770024109",
+    "firebase_url": "https://guardian-3c1f6-default-rtdb.firebaseio.com",
+    "project_id": "guardian-3c1f6",
+    "storage_bucket": "guardian-3c1f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113770024109:android:39d37453ddd8d84351ca24",
+        "android_client_info": {
+          "package_name": "com.nikhil.guardian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113770024109-r9h2ptmtg33jgs7hggs2jlvu2k670qcg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nikhil.guardian",
+            "certificate_hash": "da698e89419c39e3164a21fedd1d43ce4fc36551"
+          }
+        },
+        {
+          "client_id": "113770024109-28g372dkasn20dct8qkbjgcravqiblbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0UasjW6Yn-q8ejwRDgbrnyKyH4MOCoBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113770024109-28g372dkasn20dct8qkbjgcravqiblbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

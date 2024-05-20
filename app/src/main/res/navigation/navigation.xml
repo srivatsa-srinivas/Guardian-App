@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/dashBoardFragment">
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.nikhil.guardian.DashBoardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/new_fragment">
+        <action
+            android:id="@+id/action_dashBoardFragment_to_guardianInfo"
+            app:destination="@id/guardianInfo"
+            app:popUpTo="@+id/dashBoardFragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_mapsActivity"
+            app:destination="@id/mapsActivity"
+            app:popUpTo="@+id/dashBoardFragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_sosActivity"
+            app:destination="@id/sosActivity"
+            app:popUpTo="@+id/dashBoardFragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_youtubeActivity"
+            app:destination="@id/YoutubeActivity"
+            app:popUpTo="@+id/dashBoardFragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_right"
+            />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_nearhospital"
+            app:destination="@id/nearActivity"
+            app:popUpTo="@+id/dashBoardFragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_nearps"
+            app:destination="@id/nearpsActivity"
+            app:popUpTo="@+id/dashBoardFragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_videoactivity"
+            app:destination="@id/VideoActivity"
+            app:popUpTo="@+id/dashBoardFragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_sp"
+            app:destination="@id/SafePlaceActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/dashBoardFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_call"
+            app:destination="@id/guardiancall"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/dashBoardFragment"
+            app:popUpToInclusive="false" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/guardianInfo"
+        android:name="com.nikhil.guardian.guardiandetail.GuardianInfo"
+        android:label="Guardian Information"
+        tools:layout="@layout/fragment_guardian_info">
+        <action
+            android:id="@+id/action_guardianInfo_to_addGuardian"
+            app:destination="@id/addGuardian"
+            app:popUpTo="@+id/addGuardian"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/guardiancall"
+        android:name="com.nikhil.guardian.guardiandetail.GuardianListFragment"
+        android:label="Guardian Call"
+        tools:layout="@layout/fragment_guardian_list">
+    </fragment>
+    <fragment
+        android:id="@+id/addGuardian"
+        android:name="com.nikhil.guardian.guardiandetail.AddGuardian"
+        android:label="Add Guardian"
+        tools:layout="@layout/fragment_add_guardian">
+        <action
+            android:id="@+id/action_addGuardian_to_guardianInfo"
+            app:destination="@id/guardianInfo"
+            app:popUpTo="@+id/dashBoardFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.nikhil.guardian.MapsActivity"
+        android:label="Current Location"
+        tools:layout="@layout/activity_maps" />
+    <activity
+        android:id="@+id/nearpsActivity"
+        android:name="com.nikhil.guardian.NearPolice"
+        android:label="Near hospital"
+        tools:layout="@layout/activity_nearps" />
+    <activity
+        android:id="@+id/nearActivity"
+        android:name="com.nikhil.guardian.NearHospital"
+        android:label="Hospital"
+        tools:layout="@layout/activity_near" />
+    <activity
+        android:id="@+id/sosActivity"
+        android:name="com.nikhil.guardian.SosActivity"
+        android:label="Sos Activity"
+        tools:layout="@layout/sos_activity_layout" />
+    <activity
+        android:id="@+id/YoutubeActivity"
+        android:name="com.nikhil.guardian.FullScreenYoutubeViewActivity"
+        android:label="Training"
+        tools:layout="@layout/activity_youtube" />
+    <activity
+        android:id="@+id/VideoActivity"
+        android:name="com.nikhil.guardian.VideoCallMain"
+        android:label="Youtube Activity"
+        tools:layout="@layout/activity_video_main" />
+    <activity
+        android:id="@+id/SafePlaceActivity"
+        android:name="com.nikhil.guardian.RecyclerViewActivity"
+        android:label="safe places"
+        tools:layout="@layout/activity_viewrecycler" />
+
+</navigation>

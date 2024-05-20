@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nikhil.guardian.DashBoardFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardient_white_to_black">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="normal|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/oval_background"
+        android:text="SOS"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="369dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/firstRowLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DisableBaselineAlignment">
+
+            <!-- ImageButton 1 -->
+            <LinearLayout
+                android:id="@+id/videobutton"
+                android:layout_width="57dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <ImageView
+                    android:id="@+id/button23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/video1"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck"
+                    tools:layout_editor_absoluteX="52dp"
+                    tools:layout_editor_absoluteY="437dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Video"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nearpol"
+                android:layout_width="57dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <ImageView
+                    android:id="@+id/button24"
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/police"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck"
+                    tools:layout_editor_absoluteX="52dp"
+                    tools:layout_editor_absoluteY="437dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Nearest PS"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+            </LinearLayout>
+
+            <!-- ImageButton 3 -->
+            <LinearLayout
+                android:id="@+id/nearhos"
+                android:layout_width="57dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded,TextSizeCheck">
+
+                <ImageView
+                    android:id="@+id/button25"
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/hospital"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck"
+                    tools:layout_editor_absoluteX="52dp"
+                    tools:layout_editor_absoluteY="437dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="     Nearest hospital"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondRowLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DisableBaselineAlignment">
+
+            <!-- ImageButton 4 -->
+            <LinearLayout
+                android:layout_width="57dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <ImageView
+                    android:id="@+id/button26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/call"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck"
+                    tools:layout_editor_absoluteX="52dp"
+                    tools:layout_editor_absoluteY="437dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="call"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+            </LinearLayout>
+
+            <!-- ImageButton 5 -->
+            <LinearLayout
+                android:id="@+id/spbutton"
+                android:layout_width="57dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <ImageView
+                    android:id="@+id/button27"
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sp"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck"
+                    tools:layout_editor_absoluteX="52dp"
+                    tools:layout_editor_absoluteY="437dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Safe Places"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+            </LinearLayout>
+
+            <!-- ImageButton 6 -->
+            <LinearLayout
+                android:id="@+id/trainingbutton"
+                android:layout_width="57dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <ImageView
+                    android:id="@+id/button28"
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/train"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck"
+                    tools:layout_editor_absoluteX="52dp"
+                    tools:layout_editor_absoluteY="437dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Training"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="183dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/oval_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/emerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/capsulebtn"
+
+            android:text="Threat"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/emerButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/capsulebtn"
+            android:text="medical"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emerButton"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/emerButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/capsulebtn"
+            android:text="Theft"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emerButton2"
+            tools:ignore="HardcodedText,MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/guardianButton"
+        android:layout_width="134dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/capsulebtn"
+        android:text="guardian info"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/locButton"
+        android:layout_width="111dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/capsulebtn"
+        android:text="location"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/guardianButton"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
